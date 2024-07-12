@@ -26,25 +26,14 @@ This is a simple PHP application following the MVC (Model-View-Controller) patte
 
 ## Directory Structure
 
-Simple PHP MVC Application
-├── `.htaccess`: Uses for clean URL routing and directing requests to `index.php`.
-├── `index.php`: Entry point of the application with links to user and advertisement lists.
-├── style.css
-├── create_db.sql
-├── Controller
-│  └── `MainController.php`: Handles routing and business logic for different pages.
-├── Model
-│  ├── `User.php`: Represents a user object with properties `id` and `name`.
-│  └── `Advertisement.php`: Represents an advertisement object with properties `title` and `user_name`.
-├── Service
-│  ├── `UserService.php`: Provides methods to interact with the `users` table in the database.
-│  └── `AdvertisementService.php`: Provides methods to interact with the `advertisements` table in the database.
-├── Database
-│  └── `database.php`: Manages database connection using the singleton pattern.
-└── Views
-   ├── advertisements.php
-   ├── index.php
-   └── users.php
+- `index.php`: Entry point of the application with links to user and advertisement lists.
+- `Controller/MainController.php`: Handles routing and business logic for different pages.
+- `Model/User.php`: Represents a user object with properties `id` and `name`.
+- `Model/Advertisement.php`: Represents an advertisement object with properties `title` and `user_name`.
+- `Service/UserService.php`: Provides methods to interact with the `users` table in the database.
+- `Service/AdvertisementService.php`: Provides methods to interact with the `advertisements` table in the database.
+- `Database/database.php`: Manages database connection using the singleton pattern.
+- `.htaccess`: Uses for clean URL routing and directing requests to `index.php`.
 
 ## Installation and Setup
 
